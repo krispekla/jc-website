@@ -1,32 +1,54 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+    <Header />
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script>
+import Header from './components/Header'
+export default {
+  components: {
+    Header,
+  },
 }
+</script>
 
-#nav {
-  padding: 30px;
+<style lang="sass">
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,400, 700;0,700;1,100&display=swap')
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+* *::after,
+*::before
+  box-sizing: border-box
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+
+*
+  outline: none !important
+
+
+html
+  overflow-x: hidden
+  position: relative
+  font-size: 16px
+  color: black
+  min-height: 100vh
+  font-weight: 400
+
+body
+  font-family: 'Roboto', sans-serif;
+  text-rendering: optimizeLegibility
+  margin: 0
+  padding: 0
+  color: black
+  background: #fff
+
+#app
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  text-align: center
+  color: #2c3e50
+
+h1, h2, h3, h4, h5
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Abril Fatface', cursive;
 </style>
