@@ -1,21 +1,23 @@
 <template>
   <div id="app">
     <Header />
+    <Section1 />
   </div>
 </template>
 
 <script>
 import Header from './components/Header'
+import Section1 from './components/Section1'
 export default {
   components: {
     Header,
+    Section1,
   },
 }
 </script>
 
 <style lang="sass">
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,400, 700;0,700;1,100&display=swap')
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@300;400;700&display=swap');
 * *::after,
 *::before
   box-sizing: border-box
@@ -49,6 +51,5 @@ body
   color: #2c3e50
 
 h1, h2, h3, h4, h5
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Merriweather', serif
 </style>
